@@ -3,14 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Table from './components/Table'
-
+import TableContextProvider from './contexts/TableContextProvider'
+import InputTask from './components/InputTask'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Table></Table>
-    </>
+      <TableContextProvider>
+        <Table></Table>
+        <InputTask></InputTask>
+      </TableContextProvider>
   )
 }
 
