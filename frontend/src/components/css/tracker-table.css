@@ -1,0 +1,10 @@
+.tracker-table-container{
+    overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 2800px;
+}
+.tracker-table{
+    background-color: red;
+    width: 100px;
+    height: 10px;
+}
